@@ -1,0 +1,59 @@
+site_name: site de Formation docker 
+site_description: Getting Started with Dockerfiles, images, containers, storage and networking
+site_author: lpmb45 
+# site_url: https://squidfunk.github.io/mkdocs-material/
+
+# Repository
+# Copyright
+copyright: 'nothing but vybe in the air'
+
+# Configuration
+theme:
+  name: material
+  language: en
+  palette:
+    primary: red
+    accent: blue
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/images/favicon.png
+  logo: 'images/bearFam.svg'
+
+extra_css:
+  - css/styles.css
+  - css/dark-mode.css
+
+# Plugins
+plugins:
+  - search
+  - minify:
+      minify_html: true
+
+# Extensions
+markdown_extensions:
+  - meta
+  - markdown.extensions.admonition
+  - markdown.extensions.codehilite:
+      guess_lang: false
+  - markdown.extensions.footnotes
+  - markdown.extensions.toc:
+      permalink: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: dockersamples
+      repo: 101-tutorial
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - attr_list
+
